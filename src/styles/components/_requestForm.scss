@@ -1,0 +1,25 @@
+.request-form {
+  --flow-spacer: 1.7rem;
+  padding: 2.5rem 0;
+  text-align: center;
+
+  & .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .request-form .flex {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 75.5em) {
+  .request-form {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
