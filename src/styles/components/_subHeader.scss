@@ -1,0 +1,74 @@
+.sub-header {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-600);
+}
+
+@media screen and (max-width: 75.5em) {
+  .sub-header .container {
+    padding: 0 3rem;
+  }
+}
+
+.sub-header .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+
+  & span {
+    margin-left: 0.5rem;
+  }
+}
+
+.contacts__timming,
+.contacts__phone {
+  position: relative;
+  font-weight: var(--fw-600);
+}
+
+.contacts__phone i {
+  transform: scaleX(-1);
+}
+
+.contacts__timming::before,
+.contacts__phone::before,
+.contacts__phone::after {
+  content: "";
+  height: 235%;
+  width: 2px;
+  position: absolute;
+  top: -70%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.contacts__timming div,
+.contacts__phone div {
+  padding: 0 1.5rem;
+}
+
+.contacts__phone::after {
+  right: 0;
+}
+
+.icons li {
+  margin-left: 0;
+  position: relative;
+}
+
+.icons li::before,
+.icons li:last-child::after {
+  content: "";
+  height: 235%;
+  width: 2px;
+  position: absolute;
+  top: -70%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.icons li a {
+  color: var(--clr-neutral-100);
+  padding: 0 1.5rem;
+}

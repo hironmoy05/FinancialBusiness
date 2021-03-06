@@ -1,20 +1,106 @@
 /* General Layout */
 
-section {
-  padding: 4.75rem 0;
+section,
+footer {
+  padding: 4.75rem 3rem;
 }
 
 @media screen and (min-width: 40em) {
-  section {
-    padding: 8.75em 0;
+  section,
+  footer {
+    padding: 8.75em 3rem;
   }
 }
 
 .container {
-  max-width: 50rem;
+  max-width: 71.25rem;
   margin: 0 auto;
 }
 
 .flow-content > * + * {
   margin-top: var(--flow-spacer, 1rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split > * + * {
+  margin: 3rem 0 0 0;
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 45em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * + * {
+    margin: 0 0 0 1.5rem;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex > * + * {
+  margin-left: 1rem;
+}
+
+.services {
+  --flow-spacer: 1.5rem;
+}
+
+.fun-facts,
+.more-info,
+.callback-form {
+  --flow-spacer: 2.1875rem;
+}
+
+.fun-facts header,
+.more-info header {
+  display: flex;
+  flex-direction: column;
+}
+
+.fun-facts .section-title,
+.more-info .section-title {
+  order: 1;
+}
+
+.xs-space {
+  margin-top: 0.5rem; /* 8px */
+}
+
+.s-space {
+  margin-top: 0.625rem; /* 10px */
+}
+
+.lm-space {
+  margin-top: 0.9375rem; /* 15px */
+}
+
+.m-space {
+  margin-top: 1.25rem; /* 20px */
+}
+
+.ll-space {
+  margin-top: 1.875rem; /* 30px */
+}
+
+.l-space {
+  margin-top: 2.1875rem; /* 35px */
+}
+
+.xl-space {
+  margin-top: 2.5rem; /* 40px */
+}
+
+.xxl-space {
+  margin-top: 5rem; /* 80px */
 }
