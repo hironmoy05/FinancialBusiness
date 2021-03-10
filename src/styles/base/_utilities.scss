@@ -27,11 +27,7 @@ footer {
 }
 
 .split > * + * {
-  margin: 3rem 0 0 0;
-}
-
-.split > * {
-  flex-basis: 100%;
+  margin: var(--spacer, 3rem) 0 0 0;
 }
 
 @media screen and (min-width: 45em) {
@@ -39,8 +35,24 @@ footer {
     flex-direction: row;
   }
 
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .col-1 {
+    flex-basis: 25%;
+  }
+
+  .col-2 {
+    flex-basis: 50%;
+  }
+
+  .col-3 {
+    flex-basis: 75%;
+  }
+
   .split > * + * {
-    margin: 0 0 0 1.5rem;
+    margin: 0 0 0 var(--spacer, 1.5rem);
   }
 }
 

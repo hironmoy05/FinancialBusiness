@@ -1,0 +1,33 @@
+.fun-facts {
+  --spacer: 1.5rem;
+  background: url("../images/fun-facts-bg.jpg");
+
+  & .section-subtitle {
+    color: var(--clr-neutral-100);
+  }
+}
+
+.count-area .col-2 > * + * {
+  margin-top: 1.5rem;
+}
+
+.count-area-content {
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.1);
+  padding: 1.5rem 2.5rem;
+}
+
+@media screen and (max-width: 68.75em) AND (min-width: 45em) {
+  .count-area {
+    align-self: center;
+  }
+
+  .count-area-content {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .count-title {
+    width: 8ch;
+    margin: 0 auto;
+  }
+}
