@@ -1,0 +1,16 @@
+.more-info {
+  &-content img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 45em) {
+    &-content img {
+      width: 50%;
+    }
+  }
+
+  &-content div {
+    padding: 3rem 2.5rem;
+  }
+}

@@ -57,7 +57,7 @@ module.exports = {
     }),
   ],
 
-  devtool: "source-map",
+  devtool: false,
   devServer: {
     before: function (src, server) {
       server._watch("./src/**/*.html");
