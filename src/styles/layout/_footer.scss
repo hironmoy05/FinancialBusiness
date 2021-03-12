@@ -1,0 +1,78 @@
+.primary-footer {
+  & input,
+  & textarea {
+    padding: 0.7rem 1rem;
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-300);
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  & input {
+    border-radius: 100vw;
+  }
+
+  & textarea {
+    border-radius: 1rem;
+    height: 10rem;
+    resize: none;
+  }
+
+  & .flex {
+    flex-direction: column;
+  }
+
+  & .flex > * + * {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 50em) {
+    & .flex {
+      flex-direction: row;
+    }
+
+    form h4 {
+      margin-top: 0;
+    }
+
+    & input,
+    & textarea {
+      width: 90%;
+    }
+  }
+}
+
+.footer-title {
+  font-size: 1.3rem;
+}
+
+.footer-icon {
+  display: flex;
+}
+
+.footer-icon li {
+  background-color: var(--clr-neutral-100);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  margin-right: 0.8rem;
+}
+
+dl {
+  line-height: 1;
+}
+
+dl a {
+  color: var(--clr-neutral-100);
+  transition: color 0.5s ease;
+}
+
+dl a:hover {
+  color: var(--clr-primary);
+}
+
+form h4 {
+  margin-top: 3.5rem;
+}
+
