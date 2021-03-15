@@ -1,0 +1,31 @@
+.primary-header .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-header {
+  position: absolute;
+  top: 6%;
+  z-index: 10;
+  width: 100%;
+}
+
+.logo {
+  color: var(--clr-neutral-100);
+}
+
+.primary-nav {
+  --nav-spacer: 3.5rem;
+
+  & a {
+    color: var(--clr-neutral-100);
+    font-size: 0.9rem;
+  }
+}
+
+.primary-nav__list .active,
+.primary-nav a:hover {
+  border-bottom: 3px solid var(--clr-primary);
+  padding-bottom: 0.5rem;
+  color: var(--clr-primary);
+}

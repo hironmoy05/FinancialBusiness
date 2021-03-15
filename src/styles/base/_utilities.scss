@@ -60,7 +60,7 @@ footer {
 }
 
 .flex > * + * {
-  margin-left: 1rem;
+  margin-left: var(--nav-spacer, 1rem);
 }
 
 .bg-accent {
@@ -129,4 +129,8 @@ footer {
 
 .xxl-space {
   margin-top: 5rem; /* 80px */
+}
+
+.centerText {
+  text-align: center;
 }

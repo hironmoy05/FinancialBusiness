@@ -14,8 +14,15 @@
       src="https://kit.fontawesome.com/57899780cc.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Financial Business</title>
   </head>
+
   <body>
     <div class="sub-header">
       <div class="container flex">
@@ -53,25 +60,92 @@
       </div>
     </div>
 
-    <!-- <header class="primary-header">
-    <div class="container">
-      <div class="primary-header__inner">
-        <a class="logo" href="index.html" aria-label="finance business home page">Finance Business</a>
+    <header class="primary-header">
+      <div class="container flex">
+        <div class="primary-header__inner">
+          <a
+            class="logo"
+            href="index.html"
+            aria-label="finance business home page"
+            >Finance Business</a
+          >
+        </div>
+
+        <nav class="primary-nav">
+          <ul class="primary-nav__list flex">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="ourServices.html">Our Services</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="swiper-container swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--1">
+          <div class="container">
+            <div class="caption flow-content">
+              <header>
+                <h1 class="page-title">We are Ready to help you</h1>
+                <p class="page-subtitle lm-space">
+                  Financial Analysis & Consulting
+                </p>
+              </header>
+              <p class="page-para ll-space">
+                This finance HTML template is 100% free of charge provided by
+                TemplateMo for everyone. You can download, edit and use this
+                layout for your business website.
+              </p>
+              <a href="#" class="btn xl-space">Contact us</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--2">
+          <div class="container">
+            <div class="caption flow-content">
+              <header>
+                <h1 class="page-title">We are here to support you</h1>
+                <p class="page-subtitle lm-space">Accounting and management</p>
+              </header>
+              <p class="page-para ll-space">
+                This finance HTML template is 100% free of charge provided by
+                TemplateMo for everyone. You can download, edit and use this
+                layout for your business website.
+              </p>
+              <a href="#" class="btn xl-space">Contact us</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--3">
+          <div class="container">
+            <div class="caption flow-content">
+              <header>
+                <h1 class="page-title">We are Ready to help you</h1>
+                <p class="page-subtitle lm-space">
+                  Market analysis and statistics
+                </p>
+              </header>
+              <p class="page-para ll-space">
+                This finance HTML template is 100% free of charge provided by
+                TemplateMo for everyone. You can download, edit and use this
+                layout for your business website.
+              </p>
+              <a href="#" class="btn xl-space">Contact us</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <nav class="primary-nav">
-        <ul class="primary-nav__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="ourServices.html">Our Services</a></li>
-          <li><a href="contactUs.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <!-- controls  -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
 
-  
-
+      <!-- indicators -->
+      <div class="indicator" hidden></div>
+    </section>
+    <!-- 
   <div class="hero-carousel">
     <button class="arrow arrow-left">
       <i class="fa fa-angle-left"></i>
@@ -266,16 +340,16 @@
 
     <section class="testimonial bg-light">
       <div class="container">
-        <header>
+        <header class="centerText">
           <h2 class="section-title">What they say <span>about us</span></h2>
           <p class="section-subtitle lm-space">
             testimonials from our greatest clients
           </p>
         </header>
 
-        <div class="xxl-space">
-          <ul class="testimonial-item split">
-            <li class="testimonial-inner__content">
+        <div class="swiper-container swiper2 xxl-space">
+          <div class="swiper-wrapper testimonial-item">
+            <div class="swiper-slide testimonial-inner__content">
               <div>
                 <h4>George Walker</h4>
                 <span class="xs-space">Chief financial analyst</span>
@@ -286,9 +360,11 @@
                 </p>
               </div>
 
-              <img src="http://placehold.it/60x60" alt="" />
-            </li>
-            <li class="testimonial-inner__content">
+              <div class="image l-space">
+                <img src="http://placehold.it/60x60" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-inner__content">
               <div>
                 <h4>John Smith</h4>
                 <span class="xs-space">Market Specialist</span>
@@ -299,9 +375,11 @@
                 </p>
               </div>
 
-              <img src="http://placehold.it/60x60" alt="" />
-            </li>
-            <li class="testimonial-inner__content">
+              <div class="image l-space">
+                <img src="http://placehold.it/60x60" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-inner__content">
               <div>
                 <h4>David Wood</h4>
                 <span class="xs-space">Chief Accountant</span>
@@ -312,9 +390,11 @@
                 </p>
               </div>
 
-              <img src="http://placehold.it/60x60" alt="" />
-            </li>
-            <li class="testimonial-inner__content">
+              <div class="image l-space">
+                <img src="http://placehold.it/60x60" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-inner__content">
               <div>
                 <h4>Andrew Boom</h4>
                 <span class="xs-space">Marketing Head</span>
@@ -325,9 +405,11 @@
                 </p>
               </div>
 
-              <img src="http://placehold.it/60x60" alt="" />
-            </li>
-          </ul>
+              <div class="image l-space">
+                <img src="http://placehold.it/60x60" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -363,19 +445,39 @@
       </div>
     </section>
 
-    <section class="partners bg-light">
+    <section class="partners">
       <div class="container">
-        <ul class="split">
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-          <li><img src="images/client-01.png" alt="" /></li>
-        </ul>
+        <div class="swiper-container swiper3 bg-light">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/client-01.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -451,5 +553,10 @@
         </p>
       </div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script></script>
   </body>
 </html>

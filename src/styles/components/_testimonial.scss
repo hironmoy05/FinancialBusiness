@@ -1,0 +1,13 @@
+.testimonial-inner__content div:first-child {
+  background-color: var(--clr-neutral-100);
+  padding: 2rem;
+}
+
+.testimonial-inner__content .image {
+  display: flex;
+  justify-content: center;
+
+  & img {
+    border-radius: 10rem;
+  }
+}
