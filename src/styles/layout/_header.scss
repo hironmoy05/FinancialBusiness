@@ -8,6 +8,20 @@
   top: 6%;
   z-index: 10;
   width: 100%;
+
+  & .container {
+    padding: 0 3rem;
+  }
+
+  &__inner {
+    transform: translateX(-2rem);
+  }
+}
+
+@media screen and (min-width: 28.125em) {
+  .primary-header__inner {
+    transform: translateX(0);
+  }
 }
 
 .logo {
@@ -28,4 +42,20 @@
   border-bottom: 3px solid var(--clr-primary);
   padding-bottom: 0.5rem;
   color: var(--clr-primary);
+}
+
+@media screen and (max-width: 56.25em) {
+  .primary-nav {
+    display: none;
+  }
+
+  .primary-header {
+    top: 8%;
+  }
+}
+
+@media screen and (max-width: 48.125em) {
+  .primary-header {
+    top: 1%;
+  }
 }

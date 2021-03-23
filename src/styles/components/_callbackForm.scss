@@ -1,5 +1,6 @@
 .callback-form {
   text-align: center;
+  --spacer: 0.8rem;
 }
 
 @media screen and (min-width: 45em) {
@@ -9,12 +10,20 @@
 }
 
 .form {
-  padding: 4rem 3rem;
+  padding: 4rem 1.5rem;
+
+  @media screen and (min-width: 28.125em) {
+    .form {
+      padding: 4rem 3rem;
+    }
+  }
 
   &-control input {
     width: 100%;
     border-radius: 100vw;
     padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
   }
 
   & textarea {
@@ -24,6 +33,7 @@
     padding: 1rem;
     max-height: 10rem;
     resize: none;
+    border: none;
   }
 
   @media screen and (min-width: 45em) {

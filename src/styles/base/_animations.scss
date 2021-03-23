@@ -1,0 +1,22 @@
+@keyframes shutter {
+  0% {
+    height: 0;
+    transform-origin: top;
+  }
+
+  100% {
+    height: 15rem;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

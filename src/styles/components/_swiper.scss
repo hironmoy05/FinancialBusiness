@@ -3,7 +3,6 @@
 }
 
 .swiper2 {
-  height: 30vh;
   text-align: center;
 }
 
@@ -34,14 +33,10 @@
   }
 }
 
-.swiper-container .swiper-button-next {
-  right: 3rem;
-  color: var(--clr-neutral-100);
-}
-
+.swiper-container .swiper-button-next,
 .swiper-container .swiper-button-prev {
-  left: 3rem;
   color: var(--clr-neutral-100);
+  display: none;
 }
 
 .swiper-button-prev::after,
@@ -53,7 +48,32 @@
 .caption {
   position: absolute;
   top: 33%;
-  left: 17%;
+  left: 5%;
   color: rgba(255, 255, 255, 0.9);
-  max-width: 34rem;
+  max-width: 23rem;
+}
+
+.page-subtitle {
+  max-width: 60rem;
+}
+
+@media screen and (min-width: 28.125em) {
+  .swiper-container .swiper-button-next {
+    right: 3rem;
+    display: block;
+  }
+
+  .swiper-container .swiper-button-prev {
+    left: 3rem;
+    display: block;
+  }
+
+  .caption {
+    max-width: 30rem;
+    left: 17%;
+  }
+
+  .page-subtitle {
+    max-width: none;
+  }
 }

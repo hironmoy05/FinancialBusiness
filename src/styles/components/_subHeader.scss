@@ -4,9 +4,13 @@
   font-weight: var(--fw-600);
 }
 
-@media screen and (max-width: 75.5em) {
-  .sub-header .container {
-    padding: 0 3rem;
+.container {
+  padding: 0;
+}
+
+@media screen and (max-width: 75.5em) AND (min-width: 28.125em) {
+  .container {
+    padding: 0;
   }
 }
 
@@ -71,4 +75,10 @@
 .icons li a {
   color: var(--clr-neutral-100);
   padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 48.125em) {
+  .sub-header {
+    display: none;
+  }
 }

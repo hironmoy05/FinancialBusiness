@@ -1,0 +1,14 @@
+.hero {
+  text-align: center;
+  background: url("../images/page-heading-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15rem 0 9rem 0;
+  color: var(--clr-neutral-100);
+}
+
+.hero .section-subtitle {
+  color: inherit;
+  margin-top: 1rem;
+}

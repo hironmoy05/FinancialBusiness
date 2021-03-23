@@ -1,0 +1,28 @@
+.contact-information {
+  text-align: center;
+  --flow-spacer: 2rem;
+}
+
+.contact-item {
+  padding: 3rem;
+
+  & i {
+    font-size: 2.5rem;
+    color: var(--clr-primary);
+  }
+
+  & .fa-phone {
+    transform: rotate(90deg);
+  }
+
+  & h4 {
+    font-size: 1.3rem;
+    font-weight: var(--fw-600);
+  }
+
+  & .contact-way {
+    color: var(--clr-primary);
+    font-weight: var(--fw-700);
+    font-size: 1.1rem;
+  }
+}

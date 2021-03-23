@@ -45,10 +45,13 @@ var swiper3 = new Swiper(".swiper3", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 10,
+    },
+    520: {
+      slidesPerView: 2,
     },
     720: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 5,
@@ -60,3 +63,25 @@ var swiper3 = new Swiper(".swiper3", {
     clickable: true,
   },
 });
+
+// Single-Services
+const slides = document.querySelector(".slider").children;
+const indicator = document.querySelector(".indicator-list").children;
+console.log(indicator);
+
+for (let i = 0; i < indicator.length; i++) {
+  indicator[i].addEventListener("click", function () {
+    for (let j = 0; j < indicator.length; j++) {
+      indicator[j].classList.remove("active");
+    }
+
+    indicator[i].classList.add("active");
+
+    const id = indicator[i].getAttribute("data-id");
+    for (let k = 0; k < slides.length; k++) {
+      slides[k].classList.remove("active");
+    }
+
+    slides[id].classList.add("active");
+  });
+}

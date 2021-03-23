@@ -1,0 +1,49 @@
+@media screen and (min-width: 45em) {
+  .single-services {
+    --spacer: 4rem;
+    --flow-spacer: 2.5rem;
+  }
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+  animation: slide 0.5s linear;
+}
+
+.indicator {
+  &-list {
+    margin: 0;
+    color: var(--clr-neutral-100);
+  }
+
+  &-list li.active {
+    color: var(--clr-neutral-100);
+  }
+
+  &-list li {
+    padding: 2rem;
+    background-color: var(--clr-primary);
+    cursor: pointer;
+  }
+
+  &-list li:not(:nth-of-type(1)) {
+    margin: 0.7rem 0;
+  }
+
+  &-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-500);
+    font-weight: var(--fw-700);
+    color: var(--clr-neutral-900);
+  }
+}
+
+.slider h4 {
+  font-size: 1.5rem;
+}

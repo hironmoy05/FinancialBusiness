@@ -49,6 +49,22 @@
 
 .footer-icon {
   display: flex;
+
+  & li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+
+  & a {
+    color: var(--clr-neutral-900);
+    font-size: 1.2rem;
+  }
+
+  & li:hover {
+    background-color: var(--clr-primary);
+  }
 }
 
 .footer-icon li {
@@ -75,4 +91,3 @@ dl a:hover {
 form h4 {
   margin-top: 3.5rem;
 }
-

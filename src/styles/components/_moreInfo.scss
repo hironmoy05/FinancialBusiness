@@ -4,13 +4,21 @@
     width: 100%;
   }
 
+  .more-info--space {
+    padding: 2rem 2rem 3rem;
+  }
+
+  &-content div {
+    padding: 0 0 3rem;
+  }
+
   @media screen and (min-width: 45em) {
     &-content img {
       width: 50%;
     }
-  }
 
-  &-content div {
-    padding: 3rem 2.5rem;
+    &-content div {
+      padding: 3rem 2.5rem 3rem;
+    }
   }
 }

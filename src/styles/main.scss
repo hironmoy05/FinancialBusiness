@@ -1,19 +1,24 @@
 @use "abstracts/variables";
 
+@use "base/animations";
 @use "base/base";
 @use "base/typography";
 @use "base/utilities";
 
+@use "components/aboutUsHero";
 @use "components/callbackForm";
+@use "components/contactInformation";
 @use "components/fun-facts";
 @use "components/moreInfo";
 @use "components/partners";
 @use "components/requestForm";
 @use "components/services";
+@use "components/singleServices";
 @use "components/subHeader";
 @use "components/swiper";
 @use "components/testimonial";
 
 @use "./layout/footer";
 @use "./layout/header";
+@use "./layout/navigation";
 @use "./layout/subFooter";

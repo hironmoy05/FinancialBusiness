@@ -23,3 +23,10 @@
     padding-right: 3rem;
   }
 }
+
+@media screen and (max-width: 30em) {
+  .request-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

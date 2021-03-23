@@ -54,15 +54,29 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HTMLWebpackPlugin({
       template: "./src/index.html",
+      filename: "index.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: "./src/aboutUs.html",
+      filename: "aboutUs.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: "./src/ourServices.html",
+      filename: "ourServices.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: "./src/contactUs.html",
+      filename: "contactUs.html",
     }),
   ],
 
-  devtool: false,
+  devtool: "source-map",
   devServer: {
     before: function (src, server) {
       server._watch("./src/**/*.html");
     },
     contentBase: "./dist",
     hot: true,
+    host: "0.0.0.0",
   },
 };

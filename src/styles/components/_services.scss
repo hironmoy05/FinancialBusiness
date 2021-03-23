@@ -9,3 +9,13 @@
 .article-preview img {
   width: 100%;
 }
+
+.aboutUs .article-preview {
+  --flow-spacer: 1rem;
+  background-color: var(--clr-neutral-100);
+
+  & .accent {
+    color: var(--clr-primary);
+    font-weight: var(--fw-600);
+  }
+}
